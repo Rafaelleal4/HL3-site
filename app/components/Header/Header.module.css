@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinha o conteúdo nas extremidades */
+    padding: 30px; /* Aumenta o tamanho do padding */
+    background-color: #213242; /* Fundo azul */
+    color: #FFC965; /* Texto dourado */
+    border-bottom: 2px solid #FFC965; /* Linha dourada */
+    font-family: 'Kameron', serif;
+}
+
+.title {
+    margin: 0;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.nav {
+    margin-left: 20px; /* Ajusta o espaço entre o título e os links */
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Ajusta o espaçamento entre os links */
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: #FFC965; /* Texto dourado */
+    font-size: 20px; /* Aumenta o tamanho do texto */
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media query para dispositivos com largura máxima de 800px */
+@media (max-width: 800px) {
+    .header {
+        justify-content: space-between; /* Alinha o conteúdo nas extremidades */
+    }
+
+    .navList {
+        display: none;
+        flex-direction: column; /* Alinha os links verticalmente */
+        gap: 25px; /* Reduz o espaçamento entre os links */
+        background-color: #ffffff; /* Fundo branco */
+        position: absolute;
+        top: 105px; /* Ajusta a posição do menu */
+        right: 0;
+        width: 50%; /* Ajusta a largura do menu */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao menu */
+        border-radius: 5px; /* Adiciona border-radius */
+    }
+
+    .navList.showMenu {
+        display: flex;
+    }
+
+    .link {
+        color: #000000; /* Texto preto */
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto; /* Move o ícone de hambúrguer para a direita */
+    }
+}
+
+/* Media query para dispositivos com largura mínima de 801px */
+@media (min-width: 801px) {
+    .header {
+        justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    }
+
+    .navList {
+        display: flex; /* Garante que os links estejam visíveis */
+        flex-direction: row; /* Alinha os links horizontalmente */
+        gap: 20px; /* Espaçamento entre os links */
+    }
+
+    .hamburger {
+        display: none; /* Esconde o ícone de hambúrguer */
+    }
+}

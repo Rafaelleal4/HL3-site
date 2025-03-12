@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap');
+
+.footer {
+    background-color: #213242; /* Fundo azul */
+    color: #ffffff; /* Texto dourado */
+    padding: 30px; /* Aumenta o tamanho do padding */
+    border-top: 2px solid #FFC965; /* Linha dourada */
+    text-align: center;
+    font-family: 'Kameron', serif;
+    margin-top: 20px;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 800px; /* Define a largura máxima do conteúdo */
+    width: 100%;
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    gap: 300px; /* Espaçamento entre os blocos */
+}
+
+.services, .contact {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.services h3, .contact h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #FFC965; /* Texto dourado */
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    margin-bottom: 5px;
+}
+
+.contact p {
+    margin-bottom: 5px;
+    margin-left: 18px;
+}
+
+.icon {
+    font-size: 24px; /* Aumenta o tamanho do ícone */
+    vertical-align: middle; /* Alinha verticalmente ao meio */
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+.link {
+    text-decoration: none;
+}
+
+.copy {
+    color: #FFC965;
+}
+
+/* Media query para dispositivos com largura máxima de 800px */
+@media (max-width: 800px) {
+    .footerContent {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        text-align: center; /* Centraliza o texto */
+        gap: 20px; /* Reduz o espaçamento entre os blocos */
+    }
+
+    .contact p {
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+}

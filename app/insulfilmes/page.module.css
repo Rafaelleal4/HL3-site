@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap');
+
+.page {
+    background-color: #213242; /* Fundo azul */
+    color: #ffffff; /* Texto branco */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kameron', serif;
+}
+
+.mainTitle {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 36px;
+    
+    color: #ffffff;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Aumenta o espaçamento entre os cards */
+    padding: 20px;
+}
+
+.card {
+    background-color: #1c1c1c; /* Fundo preto ou cinza escuro */
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    width: 28%; /* Ajusta a largura do card para ocupar 28% do contêiner */
+    height: 500px; /* Diminui a altura do card */
+    max-width: 100%; /* Garante que o card não ultrapasse a largura máxima */
+}
+
+.cardImage {
+    width: 100%;
+    height: 200px; /* Diminui a altura fixa da imagem */
+    object-fit: cover; /* Garante que a imagem cubra o espaço do card */
+}
+
+.cardTitle {
+    font-family: 'Kameron', serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #ffffff; /* Texto branco */
+}
+
+.cardText {
+    padding: 10px;
+    font-family: 'Kameron', serif;
+    font-size: 16px;
+    color: #ffffff; /* Texto branco */
+    text-align: justify; /* Justifica o texto */
+}
+
+.cardTextLeft {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Media query para dispositivos com largura máxima de 800px */
+@media (max-width: 800px) {
+    .card {
+        width: 100%; /* Ajusta a largura do card para 100% */
+        margin-bottom: 20px; /* Adiciona espaçamento inferior entre os cards */
+    }
+
+    .cardsContainer {
+        flex-direction: column; /* Alinha os cards verticalmente */
+        align-items: center; /* Centraliza os cards */
+    }
+}
